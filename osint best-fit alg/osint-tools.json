@@ -1,0 +1,90 @@
+{
+    "osint_tools": {
+        "Instagram": [
+            {
+                "name": "Tool A",
+                "input": ["username"],
+                "output": ["post"],
+                "capability": [
+                    "profile data",
+                    "media scraping",
+                    "follower analysis"
+                ]
+            },
+            {
+                "name": "Tool B",
+                "input": ["username"],
+                "output": ["geolocation"],
+                "capability": [
+                    "geolocation data",
+                    "comment analysis",
+                    "sentiment analysis"
+                ]
+            }
+        ],
+        "Twitter": [
+            {
+                "name": "Tool C",
+                "input": [],
+                "output": [],
+                "capability": [
+                    "tweets and retweets",
+                    "user mentions",
+                    "follower analysis"
+                ]
+            },
+            {
+                "name": "Tool D",
+                "input": [],
+                "output": [],
+                "capability": [
+                    "hashtags analysis",
+                    "geolocation data",
+                    "sentiment analysis"
+                ]
+            }
+        ],
+        "Telegram": [
+            {
+                "name": "Tool E",
+                "input": [],
+                "output": [],
+                "capability": [
+                    "chat extraction",
+                    "group analysis",
+                    "media extraction"
+                ]
+            },
+            {
+                "name": "Tool F",
+                "input": [],
+                "output": [],
+                "capability": [
+                    "user activities",
+                    "message tracking",
+                    "file analysis"
+                ]
+            }
+        ],
+        "Dark Web": [
+            {
+                "name": "Tool G",
+                "input": [],
+                "output": [],
+                "capability": [
+                    "dark web monitoring",
+                    "anonymous forums tracking"
+                ]
+            },
+            {
+                "name": "Tool H",
+                "input": [],
+                "output": [],
+                "capability": [
+                    "dark web marketplace data",
+                    "crypto analysis"
+                ]
+            }
+        ]
+    }
+}
