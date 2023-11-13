@@ -13,6 +13,7 @@
         },
         {
             "name": "Tool B",
+            "platform": "Instagram",
             "input": ["username"],
             "output": ["geolocation"],
             "capability": [
