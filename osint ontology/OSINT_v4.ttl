@@ -239,6 +239,13 @@
                                           rdfs:label "igWebsite"@en .
 
 
+###  http://osint.it/OSINT/Twitter/accountID
+:accountID rdf:type owl:DatatypeProperty ;
+           rdfs:domain :twitterAccount ;
+           rdfs:range xsd:string ;
+           rdfs:label "twAccountID"@en .
+
+
 ###  http://osint.it/OSINT/Twitter/bannerPhoto
 :bannerPhoto rdf:type owl:DatatypeProperty ;
              rdfs:domain :twitterAccount ;
