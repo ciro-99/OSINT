@@ -1,0 +1,236 @@
+@prefix : <http://osint.it/OSINT/Twitter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://osint.it/OSINT/Twitter/> .
+
+<http://osint.it/OSINT> rdf:type owl:Ontology ;
+                         owl:versionIRI <http://osint.it/OSINT/1.0.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://osint.it/OSINT/identifiesWith
+<http://osint.it/OSINT/identifiesWith> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://osint.it/OSINT/Person> ;
+                                       rdfs:range [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://osint.it/OSINT/Instagram/username> ;
+                                                    owl:someValuesFrom owl:rational
+                                                  ] ;
+                                       rdfs:label "identifiesWith"@en .
+
+
+###  http://osint.it/OSINT/refersTo
+<http://osint.it/OSINT/refersTo> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                 rdfs:range <http://osint.it/OSINT/Category> ;
+                                 rdfs:label "refersTo"@en .
+
+
+###  http://osint.it/OSINT/Instagram/follows
+<http://osint.it/OSINT/Instagram/follows> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain :instagramAccount ;
+                                          rdfs:range :instagramAccount ;
+                                          rdfs:label "igFollows"@en .
+
+
+###  http://osint.it/OSINT/Instagram/likedBy
+<http://osint.it/OSINT/Instagram/likedBy> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                          rdfs:range :instagramAccount ;
+                                          rdfs:label "igLikedBy"@en .
+
+
+###  http://osint.it/OSINT/Instagram/published
+<http://osint.it/OSINT/Instagram/published> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain :instagramAccount ;
+                                            rdfs:range <http://osint.it/OSINT/Instagram/Post> ,
+                                                       <http://osint.it/OSINT/Instagram/Story> ;
+                                            rdfs:label "igPublished"@en .
+
+
+###  http://osint.it/OSINT/Instagram/tagged
+<http://osint.it/OSINT/Instagram/tagged> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                         rdfs:range :instagramAccount ;
+                                         rdfs:label "igTagged"@en .
+
+
+###  http://osint.it/OSINT/Instagram/takenAt
+<http://osint.it/OSINT/Instagram/takenAt> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                          rdfs:range <http://osint.it/OSINT/Location> ;
+                                          rdfs:label "igTakenAt"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://osint.it/OSINT/firstName
+<http://osint.it/OSINT/firstName> rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <http://osint.it/OSINT/Person> ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:label "firstName"@en .
+
+
+###  http://osint.it/OSINT/lastName
+<http://osint.it/OSINT/lastName> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <http://osint.it/OSINT/Person> ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:label "lastName"@en .
+
+
+###  http://osint.it/OSINT/Instagram/accountID
+<http://osint.it/OSINT/Instagram/accountID> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :instagramAccount ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:label "igAccountID"@en .
+
+
+###  http://osint.it/OSINT/Instagram/biography
+<http://osint.it/OSINT/Instagram/biography> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :instagramAccount ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:label "igBiography"@en .
+
+
+###  http://osint.it/OSINT/Instagram/caption
+<http://osint.it/OSINT/Instagram/caption> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:label "igCaption"@en .
+
+
+###  http://osint.it/OSINT/Instagram/followers
+<http://osint.it/OSINT/Instagram/followers> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :instagramAccount ;
+                                            rdfs:label "igFollowers"@en .
+
+
+###  http://osint.it/OSINT/Instagram/following
+<http://osint.it/OSINT/Instagram/following> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :instagramAccount ;
+                                            rdfs:label "igFollowing"@en .
+
+
+###  http://osint.it/OSINT/Instagram/hashtags
+<http://osint.it/OSINT/Instagram/hashtags> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "igHashtags"@en .
+
+
+###  http://osint.it/OSINT/Instagram/likes
+<http://osint.it/OSINT/Instagram/likes> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                        rdfs:label "igLikes"@en .
+
+
+###  http://osint.it/OSINT/Instagram/location
+<http://osint.it/OSINT/Instagram/location> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "igLocation"@en .
+
+
+###  http://osint.it/OSINT/Instagram/name
+<http://osint.it/OSINT/Instagram/name> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :instagramAccount ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:label "igName"@en .
+
+
+###  http://osint.it/OSINT/Instagram/photo
+<http://osint.it/OSINT/Instagram/photo> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                        rdfs:range xsd:anyURI ;
+                                        rdfs:label "igPhoto"@en .
+
+
+###  http://osint.it/OSINT/Instagram/profilePhoto
+<http://osint.it/OSINT/Instagram/profilePhoto> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain :instagramAccount ;
+                                               rdfs:range xsd:anyURI ;
+                                               rdfs:label "igProfilePhoto"@en .
+
+
+###  http://osint.it/OSINT/Instagram/timePosted
+<http://osint.it/OSINT/Instagram/timePosted> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                             rdfs:range xsd:dateTimeStamp ;
+                                             rdfs:label "igTimePosted"@en .
+
+
+###  http://osint.it/OSINT/Instagram/username
+<http://osint.it/OSINT/Instagram/username> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :instagramAccount ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "igUsername"@en .
+
+
+###  http://osint.it/OSINT/Instagram/verifiedBadge
+<http://osint.it/OSINT/Instagram/verifiedBadge> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :instagramAccount ;
+                                                rdfs:range xsd:boolean ;
+                                                rdfs:label "igVerifiedBadge"@en .
+
+
+###  http://osint.it/OSINT/Instagram/video
+<http://osint.it/OSINT/Instagram/video> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                        rdfs:range xsd:anyURI ;
+                                        rdfs:label "igVideo"@en .
+
+
+###  http://osint.it/OSINT/Instagram/website
+<http://osint.it/OSINT/Instagram/website> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain :instagramAccount ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:label "igWebsite"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://osint.it/OSINT#instagramAccount
+:instagramAccount rdf:type owl:Class ;
+                  rdfs:label "igAccount"@en .
+
+
+###  http://osint.it/OSINT/Category
+<http://osint.it/OSINT/Category> rdf:type owl:Class ;
+                                 rdfs:label "Category"@en .
+
+
+###  http://osint.it/OSINT/Location
+<http://osint.it/OSINT/Location> rdf:type owl:Class ;
+                                 rdfs:label "Location"@en .
+
+
+###  http://osint.it/OSINT/Person
+<http://osint.it/OSINT/Person> rdf:type owl:Class ;
+                               rdfs:label "Person"@en .
+
+
+###  http://osint.it/OSINT/Instagram/Post
+<http://osint.it/OSINT/Instagram/Post> rdf:type owl:Class ;
+                                       rdfs:label "igPost"@en .
+
+
+###  http://osint.it/OSINT/Instagram/Story
+<http://osint.it/OSINT/Instagram/Story> rdf:type owl:Class ;
+                                        rdfs:label "igStory"@en .
+
+
+###  http://osint.it/OSINT/Instagram/taggedPost
+<http://osint.it/OSINT/Instagram/taggedPost> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://osint.it/OSINT/Instagram/Post> ;
+                                             rdfs:label "igTaggedPost"@en .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
