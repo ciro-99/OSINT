@@ -15,7 +15,7 @@
             "name": "Tool B",
             "platform": "Instagram",
             "input": ["username"],
-            "output": ["followers", "location"],
+            "output": ["igFollowers", "igLocation"],
             "capability": [
                 "geolocation data",
                 "comment analysis",
@@ -28,7 +28,7 @@
             "input": ["username"],
             "output": ["likes", "comments"],
             "capability": [
-                "tweets and retweets",
+                "hashtags analysis",
                 "user mentions",
                 "follower analysis"
             ]
@@ -39,7 +39,7 @@
             "input": ["username"],
             "output": ["Tweet", "Retweets"],
             "capability": [
-                "hashtags analysis",
+                "tweets and retweets",
                 "geolocation data",
                 "sentiment analysis"
             ]
