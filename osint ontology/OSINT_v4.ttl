@@ -285,7 +285,7 @@
 ###  http://osint.it/OSINT/Twitter/likes
 :likes rdf:type owl:DatatypeProperty ;
        rdfs:domain :Tweet ;
-       rdfs:label "twLiked"@en .
+       rdfs:label "twLikes"@en .
 
 
 ###  http://osint.it/OSINT/Twitter/mentions
