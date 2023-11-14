@@ -23,7 +23,8 @@
 
 ###  http://osint.it/OSINT/refersTo
 <http://osint.it/OSINT/refersTo> rdf:type owl:ObjectProperty ;
-                                 rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
+                                 rdfs:domain <http://osint.it/OSINT/Instagram/Post> ,
+                                             :Tweet ;
                                  rdfs:range <http://osint.it/OSINT/Category> ;
                                  rdfs:label "refersTo"@en .
 
