@@ -148,7 +148,7 @@
 
 ###  http://osint.it/OSINT/Instagram/comments
 <http://osint.it/OSINT/Instagram/comments> rdf:type owl:DatatypeProperty ;
-                                           rdfs:domain :Tweet ;
+                                           rdfs:domain <http://osint.it/OSINT/Instagram/Post> ;
                                            rdfs:label "igComments"@en .
 
 
