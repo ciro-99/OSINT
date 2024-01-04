@@ -306,6 +306,12 @@
                                               rdfs:label "tgMessageText"@en .
 
 
+###  http://osint.it/OSINT/Telegram/messageReacts
+<http://osint.it/OSINT/Telegram/messageReacts> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://osint.it/OSINT/Telegram/Message> ;
+                                               rdfs:label "tgMessageReacts"@en .
+
+
 ###  http://osint.it/OSINT/Telegram/messageText
 <http://osint.it/OSINT/Telegram/messageText> rdf:type owl:DatatypeProperty ;
                                              rdfs:domain <http://osint.it/OSINT/Telegram/Message> ;
@@ -334,6 +340,12 @@
                                            rdfs:label "tgPostMedia"@en .
 
 
+###  http://osint.it/OSINT/Telegram/postReacts
+<http://osint.it/OSINT/Telegram/postReacts> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://osint.it/OSINT/Telegram/Post> ;
+                                            rdfs:label "tgPostReacts"@en .
+
+
 ###  http://osint.it/OSINT/Telegram/postText
 <http://osint.it/OSINT/Telegram/postText> rdf:type owl:DatatypeProperty ;
                                           rdfs:domain <http://osint.it/OSINT/Telegram/Post> ;
@@ -346,13 +358,6 @@
                                               rdfs:domain <http://osint.it/OSINT/Telegram/telegramAccount> ;
                                               rdfs:range xsd:anyURI ;
                                               rdfs:label "tgProfilePhoto"@en .
-
-
-###  http://osint.it/OSINT/Telegram/reacts
-<http://osint.it/OSINT/Telegram/reacts> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <http://osint.it/OSINT/Telegram/Message> ,
-                                                    <http://osint.it/OSINT/Telegram/Post> ;
-                                        rdfs:label "tgReacts"@en .
 
 
 ###  http://osint.it/OSINT/Telegram/roles
