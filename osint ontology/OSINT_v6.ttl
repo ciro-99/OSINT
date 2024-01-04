@@ -25,6 +25,8 @@
 ###  http://osint.it/OSINT/refersTo
 <http://osint.it/OSINT/refersTo> rdf:type owl:ObjectProperty ;
                                  rdfs:domain <http://osint.it/OSINT/Instagram/Post> ,
+                                             <http://osint.it/OSINT/Telegram/Message> ,
+                                             <http://osint.it/OSINT/Telegram/Post> ,
                                              :Tweet ;
                                  rdfs:range <http://osint.it/OSINT/Category> ;
                                  rdfs:label "refersTo"@en .
@@ -307,6 +309,13 @@
                                          rdfs:label "tgMembers"@en .
 
 
+###  http://osint.it/OSINT/Telegram/messageText
+<http://osint.it/OSINT/Telegram/messageText> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://osint.it/OSINT/Telegram/Message> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:label "tgMessageText"@en .
+
+
 ###  http://osint.it/OSINT/Telegram/name
 <http://osint.it/OSINT/Telegram/name> rdf:type owl:DatatypeProperty ;
                                       rdfs:domain <http://osint.it/OSINT/Telegram/telegramAccount> ;
@@ -319,6 +328,13 @@
                                              rdfs:domain <http://osint.it/OSINT/Telegram/telegramAccount> ;
                                              rdfs:range xsd:string ;
                                              rdfs:label "tgPhoneNumber"@en .
+
+
+###  http://osint.it/OSINT/Telegram/postText
+<http://osint.it/OSINT/Telegram/postText> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://osint.it/OSINT/Telegram/Post> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:label "tgPostText"@en .
 
 
 ###  http://osint.it/OSINT/Telegram/profilePhoto
@@ -437,6 +453,13 @@
             rdfs:label "twTimePosted"@en .
 
 
+###  http://osint.it/OSINT/Twitter/tweetText
+:tweetText rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Tweet ;
+           rdfs:range xsd:string ;
+           rdfs:label "twText"@en .
+
+
 ###  http://osint.it/OSINT/Twitter/username
 :username rdf:type owl:DatatypeProperty ;
           rdfs:domain :twitterAccount ;
@@ -534,13 +557,13 @@
 
 ###  http://osint.it/OSINT/Telegram/Message
 <http://osint.it/OSINT/Telegram/Message> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://osint.it/OSINT/Telegram> ;
+                                         rdfs:subClassOf <http://osint.it/OSINT/Telegram/Group> ;
                                          rdfs:label "tgMessage"@en .
 
 
 ###  http://osint.it/OSINT/Telegram/Post
 <http://osint.it/OSINT/Telegram/Post> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://osint.it/OSINT/Telegram> ;
+                                      rdfs:subClassOf <http://osint.it/OSINT/Telegram/Channel> ;
                                       rdfs:label "tgPost"@en .
 
 
