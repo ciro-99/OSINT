@@ -258,6 +258,13 @@
                                                     rdfs:label "tgChannelDescription"@en .
 
 
+###  http://osint.it/OSINT/Telegram/channelInviteLinks
+<http://osint.it/OSINT/Telegram/channelInviteLinks> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://osint.it/OSINT/Telegram/Channel> ;
+                                                    rdfs:range xsd:anyURI ;
+                                                    rdfs:label "tgChannelInviteLinks"@en .
+
+
 ###  http://osint.it/OSINT/Telegram/channelName
 <http://osint.it/OSINT/Telegram/channelName> rdf:type owl:DatatypeProperty ;
                                              rdfs:domain <http://osint.it/OSINT/Telegram/Channel> ;
@@ -279,34 +286,24 @@
                                                   rdfs:label "tgGroupDescription"@en .
 
 
-###  http://osint.it/OSINT/Telegram/inviteLinks
-<http://osint.it/OSINT/Telegram/inviteLinks> rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain <http://osint.it/OSINT/Telegram/Channel> ,
-                                                         <http://osint.it/OSINT/Telegram/Group> ;
-                                             rdfs:range xsd:anyURI ;
-                                             rdfs:label "tgInviteLinks"@en .
-
-
-###  http://osint.it/OSINT/Telegram/links
-<http://osint.it/OSINT/Telegram/links> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <http://osint.it/OSINT/Telegram/Message> ,
-                                                   <http://osint.it/OSINT/Telegram/Post> ;
-                                       rdfs:range xsd:anyURI ;
-                                       rdfs:label "tgLinks"@en .
-
-
-###  http://osint.it/OSINT/Telegram/media
-<http://osint.it/OSINT/Telegram/media> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <http://osint.it/OSINT/Telegram/Message> ,
-                                                   <http://osint.it/OSINT/Telegram/Post> ;
-                                       rdfs:range xsd:anyURI ;
-                                       rdfs:label "tgMedia"@en .
+###  http://osint.it/OSINT/Telegram/groupInviteLinks
+<http://osint.it/OSINT/Telegram/groupInviteLinks> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://osint.it/OSINT/Telegram/Group> ;
+                                                  rdfs:range xsd:anyURI ;
+                                                  rdfs:label "tgGroupInviteLinks"@en .
 
 
 ###  http://osint.it/OSINT/Telegram/members
 <http://osint.it/OSINT/Telegram/members> rdf:type owl:DatatypeProperty ;
                                          rdfs:domain <http://osint.it/OSINT/Telegram/Group> ;
                                          rdfs:label "tgMembers"@en .
+
+
+###  http://osint.it/OSINT/Telegram/messageMedia
+<http://osint.it/OSINT/Telegram/messageMedia> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://osint.it/OSINT/Telegram/Message> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:label "tgMessageText"@en .
 
 
 ###  http://osint.it/OSINT/Telegram/messageText
@@ -328,6 +325,13 @@
                                              rdfs:domain <http://osint.it/OSINT/Telegram/telegramAccount> ;
                                              rdfs:range xsd:string ;
                                              rdfs:label "tgPhoneNumber"@en .
+
+
+###  http://osint.it/OSINT/Telegram/postMedia
+<http://osint.it/OSINT/Telegram/postMedia> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://osint.it/OSINT/Telegram/Post> ;
+                                           rdfs:range xsd:anyURI ;
+                                           rdfs:label "tgPostMedia"@en .
 
 
 ###  http://osint.it/OSINT/Telegram/postText
