@@ -1,0 +1,90 @@
+{
+    "instaloader": {
+        "node_type": "Profile",
+        "version": "4.10.2"
+    },
+    "node": {
+        "ai_agent_type": null,
+        "bio_links": [],
+        "biography": "Computer Engineering Student \ud83c\udf93\nFounder of @curiosity_astronomy \ud83c\udf0c",
+        "biography_with_entities": {
+            "entities": [
+                {
+                    "hashtag": null,
+                    "user": {
+                        "username": "curiosity_astronomy"
+                    }
+                }
+            ],
+            "raw_text": "Computer Engineering Student \ud83c\udf93\nFounder of @curiosity_astronomy \ud83c\udf0c"
+        },
+        "blocked_by_viewer": false,
+        "business_address_json": null,
+        "business_category_name": null,
+        "business_contact_method": "UNKNOWN",
+        "business_email": null,
+        "business_phone_number": null,
+        "category_enum": null,
+        "category_name": null,
+        "connected_fb_page": null,
+        "country_block": false,
+        "edge_follow": {
+            "count": 624
+        },
+        "edge_followed_by": {
+            "count": 1223
+        },
+        "edge_mutual_followed_by": {
+            "count": 0,
+            "edges": []
+        },
+        "edge_related_profiles": {
+            "edges": []
+        },
+        "eimu_id": "106712684059056",
+        "external_url": null,
+        "external_url_linkshimmed": null,
+        "fb_profile_biolink": null,
+        "fbid": "17841400527223838",
+        "followed_by_viewer": false,
+        "follows_viewer": false,
+        "full_name": "Ciro Marrazzo",
+        "group_metadata": null,
+        "guardian_id": null,
+        "has_ar_effects": false,
+        "has_blocked_viewer": false,
+        "has_channel": false,
+        "has_clips": true,
+        "has_guides": false,
+        "has_requested_viewer": false,
+        "hide_like_and_view_counts": false,
+        "highlight_reel_count": 0,
+        "id": "245649574",
+        "is_business_account": false,
+        "is_embeds_disabled": false,
+        "is_guardian_of_viewer": false,
+        "is_joined_recently": false,
+        "is_private": true,
+        "is_professional_account": false,
+        "is_regulated_c18": false,
+        "is_supervised_by_viewer": false,
+        "is_supervised_user": false,
+        "is_supervision_enabled": false,
+        "is_verified": false,
+        "is_verified_by_mv4b": false,
+        "overall_category_name": null,
+        "pinned_channels_list_count": 0,
+        "profile_pic_url": "https://instagram.fnap3-1.fna.fbcdn.net/v/t51.2885-19/403920919_1575725329924956_427999549551470105_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fnap3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=PueltfUYGNIAX90ydg5&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfDXxeI-e_XG-tztueCr7zTVDwUBxv5W80vB_S7enjWhXA&oe=65BF1741&_nc_sid=8b3546",
+        "profile_pic_url_hd": "https://instagram.fnap3-1.fna.fbcdn.net/v/t51.2885-19/403920919_1575725329924956_427999549551470105_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fnap3-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=PueltfUYGNIAX90ydg5&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfAOAlyNmq5Yhj3kItSoF1-yOlWTBq4srgClo8rltn1S7g&oe=65BF1741&_nc_sid=8b3546",
+        "pronouns": [],
+        "remove_message_entrypoint": false,
+        "requested_by_viewer": false,
+        "restricted_by_viewer": null,
+        "should_show_category": false,
+        "should_show_public_contacts": false,
+        "show_account_transparency_details": true,
+        "transparency_label": null,
+        "transparency_product": null,
+        "username": "ciro.marrazzo"
+    }
+}
