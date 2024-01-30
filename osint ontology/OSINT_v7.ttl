@@ -573,12 +573,6 @@
                                                    rdfs:label "igAccount"@en .
 
 
-###  http://osint.it/OSINT/Instagram/taggedPost
-<http://osint.it/OSINT/Instagram/taggedPost> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://osint.it/OSINT/Instagram/Post> ;
-                                             rdfs:label "igTaggedPost"@en .
-
-
 ###  http://osint.it/OSINT/Telegram/Channel
 <http://osint.it/OSINT/Telegram/Channel> rdf:type owl:Class ;
                                          rdfs:subClassOf <http://osint.it/OSINT/Telegram> ;
@@ -593,13 +587,13 @@
 
 ###  http://osint.it/OSINT/Telegram/Message
 <http://osint.it/OSINT/Telegram/Message> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://osint.it/OSINT/Telegram/Group> ;
+                                         rdfs:subClassOf <http://osint.it/OSINT/Telegram> ;
                                          rdfs:label "tgMessage"@en .
 
 
 ###  http://osint.it/OSINT/Telegram/Post
 <http://osint.it/OSINT/Telegram/Post> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://osint.it/OSINT/Telegram/Channel> ;
+                                      rdfs:subClassOf <http://osint.it/OSINT/Telegram> ;
                                       rdfs:label "tgPost"@en .
 
 
